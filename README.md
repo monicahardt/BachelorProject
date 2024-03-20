@@ -18,3 +18,13 @@
 - Find alle søgninger fra SJSearchJourneys
 - Hvor forsvinder datene hen? Kør ét join af gangen.
 - Kan vi ikke bruge SJWaypoints så er det bare derudaf med Jounreys
+
+## Questions for database guy
+
+- Why is all journeys not covered by RP and SJ?
+- Why is SJWaypoints as stated not covering all journeys of type Relation or Zone?
+- Why is there a 1 to many relationsship between Orders and tickets?
+- An order with multiple tickets have the same journey duplicated 1 or many times. Why is this the case?
+Can we assume that is a group of people travelling by purchesing multiiple tickets at the same time, paying together from one app. 
+
+

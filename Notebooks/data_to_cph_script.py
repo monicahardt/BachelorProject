@@ -36,11 +36,7 @@ cph_data = cph_data[( ~ (cph_data['SearchStart'].str.contains("zones", na=False)
                                             cph_data['SearchStart'].str.contains("ocation", na=False)))]
 
 # Next filter is to remove entries where one of the matching search-x or x-stop are Null
-cph_data = cph_data[(
-                                        ( ~ (pd.isna(cph_data['SearchStart'])) & ~ (pd.isna(cph_data['SearchEnd'])))
-                                        | # Or
-                                        ( ~ (pd.isna(cph_data['StartStop'])) & ~ (pd.isna(cph_data['EndStop'])))
-                                        )]
+cph_data = cph_data[( ~ (pd.isna(cph_data['SearchStart'])) & ~ (pd.isna(cph_data['SearchEnd'])))]
 
 # Next filter removes all entries where SearchStart and SearchEnd contain the same value
 cph_data = cph_data[(

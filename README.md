@@ -48,3 +48,14 @@
 ## SJ journeys
 
 - Working with SJ, filtering using the same filters as for journeys on finding journeys in CPH, we have ```7790```in one month, which is roughly ```373920```journeys in total. 
+
+# Attempts
+
+## DAWA
+
+In an attempt to get coordinates of each of the 40.000 unique stations in cph, different approaches were used. Specifically DAWA was used in an attempt. This did however not work since the data works on actual addresses and not 'searched' addresses. At the same time, the API does not provide coordinates. 
+
+## KD-tree
+
+A KD-tree (or BALLTREE) were also considered for clustering locations in cph. However, the making of a kd-tree is based on coordinations which are difficult to get. By using geopy and comparing coordinates we already have a somewhat cluster of locations and therefore does not need further clustering. However, for further work it could be interesting to create sequences based on a KD-tree-clustering instead of a 'radius'-margin-based clustering on stations of high trafic.
+

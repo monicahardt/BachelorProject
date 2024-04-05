@@ -48,3 +48,7 @@
 ## SJ journeys
 
 - Working with SJ, filtering using the same filters as for journeys on finding journeys in CPH, we have ```7790```in one month, which is roughly ```373920```journeys in total. 
+
+# Sequences
+
+- We have identified that for example with 'Kongens Nytorv' we get a lot of frequency on station names such as 'Kongens Nytorv (Metro)' as well as 'Kongens Nytorv st.' but we also see a lot of addresses like 'Kongens Nytorv 3' and so on. We have for now decided not to "place" any of these addresses at a certain station, even though it it fair to assume that the person standing at Kongens Nytorv will most likely have walked to the metro or to a bus. After creating our first model and looking at the results, we will have this in mind, because "collecting" these addresses into stations could potentially (and most likely will) change the embedding space we get. 

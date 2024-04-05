@@ -52,3 +52,13 @@
 # Sequences
 
 - We have identified that for example with 'Kongens Nytorv' we get a lot of frequency on station names such as 'Kongens Nytorv (Metro)' as well as 'Kongens Nytorv st.' but we also see a lot of addresses like 'Kongens Nytorv 3' and so on. We have for now decided not to "place" any of these addresses at a certain station, even though it it fair to assume that the person standing at Kongens Nytorv will most likely have walked to the metro or to a bus. After creating our first model and looking at the results, we will have this in mind, because "collecting" these addresses into stations could potentially (and most likely will) change the embedding space we get. 
+# Attempts
+
+## DAWA
+
+In an attempt to get coordinates of each of the 40.000 unique stations in cph, different approaches were used. Specifically DAWA was used in an attempt. This did however not work since the data works on actual addresses and not 'searched' addresses. At the same time, the API does not provide coordinates. 
+
+## KD-tree
+
+A KD-tree (or BALLTREE) were also considered for clustering locations in cph. However, the making of a kd-tree is based on coordinations which are difficult to get. By using geopy and comparing coordinates we already have a somewhat cluster of locations and therefore does not need further clustering. However, for further work it could be interesting to create sequences based on a KD-tree-clustering instead of a 'radius'-margin-based clustering on stations of high trafic.
+

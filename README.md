@@ -112,3 +112,19 @@ Geodata: er det muligt.
 Hent koordinator på alt. Lav postprocessering i python bagefter. 
 
 
+
+
+Sentdex neural networks from scratch in python
+
+Hvad er embeddingsmodels
+HVORDAN ER de brugt. Start bredt
+Hvordan repræsentere de her embeddingmodels virkeligheden
+Hvordan bruger vi dem?
+Hvorfor kan det bruges i vores tilfælde med mennesker og infrastruktur?
+
+
+Software: machine learning og pipeline setup
+Parametervalg og andet er mere i datascience.
+
+Hvor meget skal det fylde med teknisk beskrivelse af model?
+Vi har valgt noget som er meget brugt, så der er ikke mange valg i forhold til det der er truffet, og forklaringen af modellen skal ikke fylde meget. 

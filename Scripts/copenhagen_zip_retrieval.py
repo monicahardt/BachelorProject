@@ -43,7 +43,6 @@ for place in addresses_incorrect_location:
             try:
                 if 1000 <= int(zip) <= 4999:
                     added_location_to_coordinate[place] = location_found
-                    print(location_found)  
             except:
                 print(f"Failed to convert zip for location {place}, found zip {zip}") 
                 

@@ -1,0 +1,32 @@
+{
+    "Strandvejen": {
+        "latitude": 55.1894491,
+        "longitude": 14.9980556,
+        "address": "Strandvejen, Bornholms Regionskommune, Region Hovedstaden, 3760, Danmark"
+    },
+    "Kastrupvej 1": {
+        "latitude": 55.691525,
+        "longitude": 11.148448,
+        "address": "1, K\u00e5strupvej, K\u00e5strup, Kalundborg, Kalundborg Kommune, Region Sj\u00e6lland, 4400, Danmark"
+    },
+    "Linde Alle": {
+        "latitude": 55.5946693,
+        "longitude": 12.669099,
+        "address": "Linde Alle, Sydstranden, Drag\u00f8r, Drag\u00f8r Kommune, Region Hovedstaden, 2791, Danmark"
+    },
+    "Rugvej 5": {
+        "latitude": 55.322564,
+        "longitude": 11.163574,
+        "address": "5, Rugvej, Kors\u00f8r, Slagelse Kommune, Region Sj\u00e6lland, 4220, Danmark"
+    },
+    "Nyhavn 7": {
+        "latitude": 55.680684,
+        "longitude": 12.588481,
+        "address": "7, Nyhavn, Gammelholm, Christianshavn, K\u00f8benhavn, K\u00f8benhavns Kommune, Region Hovedstaden, 1051, Danmark"
+    },
+    "Enem\u00e6rket 2": {
+        "latitude": 55.712106,
+        "longitude": 12.511948,
+        "address": "2, Enem\u00e6rket, Utterslev, Br\u00f8nsh\u00f8j, K\u00f8benhavn, K\u00f8benhavns Kommune, Region Hovedstaden, 2400, Danmark"
+    }
+}

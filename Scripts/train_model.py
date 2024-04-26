@@ -44,10 +44,10 @@ def run(min_count, epoch_count):
                     workers=4,                # Amount of cores used for training and so forth.
                     compute_loss=True,        # Used for logging
                     callbacks=[epoch_logger], # Used for logging
-                    alpha=0.05,               # Learning rate. Default is 0.025, but due to the relatively low epochs, a higher lr were decided to give a quicker lowest loss-model
-                    window=1,                 # Due to our sequences only being of length two, when using skip-gram, out window only consists of either the next or the prev entry (as there isn't any other elements in the sequence)
+                    alpha=0.01,               # Learning rate. Default is 0.025, but due to the relatively low epochs, a higher lr were decided to give a quicker lowest loss-model
+                    window=5,                 # Due to our sequences only being of length two, when using skip-gram, out window only consists of either the next or the prev entry (as there isn't any other elements in the sequence)
                     sg=1,                     # Skip-gram. WHY DO WE CHOOSE THIS OVER CBoW? 
-                    batch_words=5000,         # Batching training together for more effeciency
+                    # batch_words=10000,         # Batching training together for more effeciency
                     epochs=epoch_count
                     )                       
 
@@ -67,9 +67,9 @@ def main():
     epoch_count               = int(input())
 
     model = run(min_count, epoch_count)
-    best_model[0].save("best_model_100_dim_5e.model")
-    model.save("last_model_100_dim_5e.model")
-    with open('loss_tracker_4_100_dim.txt', 'w') as f:
+    # best_model[0].save("model_2e_100d.model")
+    model.save("model_5e_100d_5w.model")
+    with open('loss_tracker_100d_10000e.txt', 'w') as f:
         for item in loss_tracker:
             f.write(str(item) + '\n')
 

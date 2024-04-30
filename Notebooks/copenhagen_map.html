@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fbe69b5eedf36218f12ab90bfc2dd70d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fbe69b5eedf36218f12ab90bfc2dd70d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fbe69b5eedf36218f12ab90bfc2dd70d = L.map(
+                "map_fbe69b5eedf36218f12ab90bfc2dd70d",
+                {
+                    center: [55.6761, 12.5683],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_71a44a69318370190d43cee41fe46e66 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_71a44a69318370190d43cee41fe46e66.addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+            var marker_2779af307f48445e3f6574e0d9312cbe = L.marker(
+                [55.684974249999996, 12.589551944626178],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_cb5cdfd051096d361b4abb8844ee896d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ea300585aa15d649838df1cb700ad746 = $(`<div id="html_ea300585aa15d649838df1cb700ad746" style="width: 100.0%; height: 100.0%;">Marmorkirken St. (Metro)</div>`)[0];
+                popup_cb5cdfd051096d361b4abb8844ee896d.setContent(html_ea300585aa15d649838df1cb700ad746);
+            
+        
+
+        marker_2779af307f48445e3f6574e0d9312cbe.bindPopup(popup_cb5cdfd051096d361b4abb8844ee896d)
+        ;
+
+        
+    
+    
+            var marker_4c1b7eccd74bd66b2872bb9eee6f1a07 = L.marker(
+                [55.7056331, 12.5904797],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_5f64ec6cf343f92cbdb201ff876a5141 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83263fc20b42ae581e90f5b62de08f5d = $(`<div id="html_83263fc20b42ae581e90f5b62de08f5d" style="width: 100.0%; height: 100.0%;">Nordhavn St.</div>`)[0];
+                popup_5f64ec6cf343f92cbdb201ff876a5141.setContent(html_83263fc20b42ae581e90f5b62de08f5d);
+            
+        
+
+        marker_4c1b7eccd74bd66b2872bb9eee6f1a07.bindPopup(popup_5f64ec6cf343f92cbdb201ff876a5141)
+        ;
+
+        
+    
+    
+            var marker_cea0e902e0bff9ef54eb01352024c702 = L.marker(
+                [-37.5793791, 144.8974495],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_ffe61c5582030137eabb14f1387ce326 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_039ed62c6648b1e5e232bd3ef726210f = $(`<div id="html_039ed62c6648b1e5e232bd3ef726210f" style="width: 100.0%; height: 100.0%;">Øresund St. (Metro)</div>`)[0];
+                popup_ffe61c5582030137eabb14f1387ce326.setContent(html_039ed62c6648b1e5e232bd3ef726210f);
+            
+        
+
+        marker_cea0e902e0bff9ef54eb01352024c702.bindPopup(popup_ffe61c5582030137eabb14f1387ce326)
+        ;
+
+        
+    
+    
+            var marker_d8f86392fc3d530097834403531cabe5 = L.marker(
+                [55.6305318239452, 12.649306113221607],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_478842b6f599ba54a93d62ddf5b499db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fd89781557007076a3543dfe7945ea2 = $(`<div id="html_5fd89781557007076a3543dfe7945ea2" style="width: 100.0%; height: 100.0%;">Københavns Lufthavn St. (Metro)</div>`)[0];
+                popup_478842b6f599ba54a93d62ddf5b499db.setContent(html_5fd89781557007076a3543dfe7945ea2);
+            
+        
+
+        marker_d8f86392fc3d530097834403531cabe5.bindPopup(popup_478842b6f599ba54a93d62ddf5b499db)
+        ;
+
+        
+    
+    
+            var marker_b6133b817cdc8c11405f544c32c2dee1 = L.marker(
+                [55.6673023, 12.62983255802314],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_386429fd0159f5965fb4d58e0187605e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10064ae0839e0cf703ad8fd460afb7ad = $(`<div id="html_10064ae0839e0cf703ad8fd460afb7ad" style="width: 100.0%; height: 100.0%;">Amager Strand St. (Metro)</div>`)[0];
+                popup_386429fd0159f5965fb4d58e0187605e.setContent(html_10064ae0839e0cf703ad8fd460afb7ad);
+            
+        
+
+        marker_b6133b817cdc8c11405f544c32c2dee1.bindPopup(popup_386429fd0159f5965fb4d58e0187605e)
+        ;
+
+        
+    
+    
+            var marker_3583f38d6bedc7887f7000c454a0b70c = L.marker(
+                [55.65077, 12.551746],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_ec59c247492c8e8c7d9382b3cc7678fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c49808023b366334eb1c565c81cf9b5f = $(`<div id="html_c49808023b366334eb1c565c81cf9b5f" style="width: 100.0%; height: 100.0%;">Teglholmen</div>`)[0];
+                popup_ec59c247492c8e8c7d9382b3cc7678fc.setContent(html_c49808023b366334eb1c565c81cf9b5f);
+            
+        
+
+        marker_3583f38d6bedc7887f7000c454a0b70c.bindPopup(popup_ec59c247492c8e8c7d9382b3cc7678fc)
+        ;
+
+        
+    
+    
+            var marker_fc081d3c9cca94816dfd78c076cb728b = L.marker(
+                [45.7982043, -121.4852882],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_e71f9b48e97032e187bc4d4a76bcb8fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a5ce095c92b64c6433a649a60ee85fe = $(`<div id="html_9a5ce095c92b64c6433a649a60ee85fe" style="width: 100.0%; height: 100.0%;">Husum St.</div>`)[0];
+                popup_e71f9b48e97032e187bc4d4a76bcb8fe.setContent(html_9a5ce095c92b64c6433a649a60ee85fe);
+            
+        
+
+        marker_fc081d3c9cca94816dfd78c076cb728b.bindPopup(popup_e71f9b48e97032e187bc4d4a76bcb8fe)
+        ;
+
+        
+    
+    
+            var marker_9958df9c926a2a0821872b6fc6a17930 = L.marker(
+                [55.6558805, 12.5512618],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_af6c3fe4f4b223ba5ca69203f301a7c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a3c7e2f909872d3874234a0a913fbed = $(`<div id="html_8a3c7e2f909872d3874234a0a913fbed" style="width: 100.0%; height: 100.0%;">Frederiks Brygge</div>`)[0];
+                popup_af6c3fe4f4b223ba5ca69203f301a7c1.setContent(html_8a3c7e2f909872d3874234a0a913fbed);
+            
+        
+
+        marker_9958df9c926a2a0821872b6fc6a17930.bindPopup(popup_af6c3fe4f4b223ba5ca69203f301a7c1)
+        ;
+
+        
+    
+    
+            var marker_2d1d2b9d99adb00035ad25af16f4ad5c = L.marker(
+                [55.6486416, 12.5519355],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_4617b4f56989ebe84e7af995afed90bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f8f9b5eb300e55177ffadb40daad9fb = $(`<div id="html_6f8f9b5eb300e55177ffadb40daad9fb" style="width: 100.0%; height: 100.0%;">Alliancevej</div>`)[0];
+                popup_4617b4f56989ebe84e7af995afed90bb.setContent(html_6f8f9b5eb300e55177ffadb40daad9fb);
+            
+        
+
+        marker_2d1d2b9d99adb00035ad25af16f4ad5c.bindPopup(popup_4617b4f56989ebe84e7af995afed90bb)
+        ;
+
+        
+    
+    
+            var marker_18a7167f4884778b06650f9da8fb1d1d = L.marker(
+                [55.6859951, 12.4986859],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_3e375237ee1413eb9e98662b1aa6d06e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c9470c7a6af438749582c2397865892 = $(`<div id="html_8c9470c7a6af438749582c2397865892" style="width: 100.0%; height: 100.0%;">Flintholm St.</div>`)[0];
+                popup_3e375237ee1413eb9e98662b1aa6d06e.setContent(html_8c9470c7a6af438749582c2397865892);
+            
+        
+
+        marker_18a7167f4884778b06650f9da8fb1d1d.bindPopup(popup_3e375237ee1413eb9e98662b1aa6d06e)
+        ;
+
+        
+    
+    
+            var marker_0ea378032387bda9323e1a8c0b55a46f = L.marker(
+                [55.6888254, 12.5530144],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_527d81edd2d638a0bc2ad44d48336211 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3aab35c4109813c3c57725ffc267c6b1 = $(`<div id="html_3aab35c4109813c3c57725ffc267c6b1" style="width: 100.0%; height: 100.0%;">Kapelvej</div>`)[0];
+                popup_527d81edd2d638a0bc2ad44d48336211.setContent(html_3aab35c4109813c3c57725ffc267c6b1);
+            
+        
+
+        marker_0ea378032387bda9323e1a8c0b55a46f.bindPopup(popup_527d81edd2d638a0bc2ad44d48336211)
+        ;
+
+        
+    
+    
+            var marker_878f0e20d10ce4fb35c35eb4edf1c966 = L.marker(
+                [55.6651206, 12.5650427],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_e5ec42cc3c557dbd8fe59329c54d5773 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_002c8f531d7b0a31fb8f1adc997b11a3 = $(`<div id="html_002c8f531d7b0a31fb8f1adc997b11a3" style="width: 100.0%; height: 100.0%;">Tivoli Hotel</div>`)[0];
+                popup_e5ec42cc3c557dbd8fe59329c54d5773.setContent(html_002c8f531d7b0a31fb8f1adc997b11a3);
+            
+        
+
+        marker_878f0e20d10ce4fb35c35eb4edf1c966.bindPopup(popup_e5ec42cc3c557dbd8fe59329c54d5773)
+        ;
+
+        
+    
+    
+            var marker_a527d9a9f6a4e20adeb8a0b183d8c975 = L.marker(
+                [55.6737217, 12.5402687],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_f64d924b6d9c5d93655739a5f98a0932 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_269cb76d8e8b2c676c93ba998e5416fe = $(`<div id="html_269cb76d8e8b2c676c93ba998e5416fe" style="width: 100.0%; height: 100.0%;">Frederiksberg Allé St. (Metro)</div>`)[0];
+                popup_f64d924b6d9c5d93655739a5f98a0932.setContent(html_269cb76d8e8b2c676c93ba998e5416fe);
+            
+        
+
+        marker_a527d9a9f6a4e20adeb8a0b183d8c975.bindPopup(popup_f64d924b6d9c5d93655739a5f98a0932)
+        ;
+
+        
+    
+    
+            var marker_45989589a709329cb5dbde11c9c193b2 = L.marker(
+                [55.677864311866976, 12.579574697878703],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_ec321334a19061ef2b7be92177f7aa2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aaecc45dd6d108247a03631737f8284f = $(`<div id="html_aaecc45dd6d108247a03631737f8284f" style="width: 100.0%; height: 100.0%;">Gammel Strand St.</div>`)[0];
+                popup_ec321334a19061ef2b7be92177f7aa2c.setContent(html_aaecc45dd6d108247a03631737f8284f);
+            
+        
+
+        marker_45989589a709329cb5dbde11c9c193b2.bindPopup(popup_ec321334a19061ef2b7be92177f7aa2c)
+        ;
+
+        
+    
+    
+            var marker_a363e90ce56573fdf1dbf52834f152b4 = L.marker(
+                [55.6989191, 12.5762525],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_9bf603ef44c1b01349374259195ec978 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c13a76544cb485fcfa15e21d8eaff6dd = $(`<div id="html_c13a76544cb485fcfa15e21d8eaff6dd" style="width: 100.0%; height: 100.0%;">Trianglen St.</div>`)[0];
+                popup_9bf603ef44c1b01349374259195ec978.setContent(html_c13a76544cb485fcfa15e21d8eaff6dd);
+            
+        
+
+        marker_a363e90ce56573fdf1dbf52834f152b4.bindPopup(popup_9bf603ef44c1b01349374259195ec978)
+        ;
+
+        
+    
+    
+            var marker_f29db2ec82fc3aa68e40f0990cc139ff = L.marker(
+                [55.67294325, 12.520970988714481],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_78091d239712c97f52bc168479d055cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce47e1a35daccf50020891b5ea4e859a = $(`<div id="html_ce47e1a35daccf50020891b5ea4e859a" style="width: 100.0%; height: 100.0%;">Zoologisk Have</div>`)[0];
+                popup_78091d239712c97f52bc168479d055cf.setContent(html_ce47e1a35daccf50020891b5ea4e859a);
+            
+        
+
+        marker_f29db2ec82fc3aa68e40f0990cc139ff.bindPopup(popup_78091d239712c97f52bc168479d055cf)
+        ;
+
+        
+    
+    
+            var marker_81518a2d169e0b8978abfc089a9b9f08 = L.marker(
+                [55.7028803, 12.548356],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_e999f28c99e329fa46ad76852783da84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_971d994326c785577db9e94c013459cc = $(`<div id="html_971d994326c785577db9e94c013459cc" style="width: 100.0%; height: 100.0%;">Skjolds Plads St. (Metro)</div>`)[0];
+                popup_e999f28c99e329fa46ad76852783da84.setContent(html_971d994326c785577db9e94c013459cc);
+            
+        
+
+        marker_81518a2d169e0b8978abfc089a9b9f08.bindPopup(popup_e999f28c99e329fa46ad76852783da84)
+        ;
+
+        
+    
+    
+            var marker_4807aca9a2a5a6bd99603f05d296a703 = L.marker(
+                [55.6196875, 12.5754564],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_6ea9e8e08671d8fe110a82ae670d9e1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97d275c98f275501a232ad4dbc5036f2 = $(`<div id="html_97d275c98f275501a232ad4dbc5036f2" style="width: 100.0%; height: 100.0%;">Vestamager St.</div>`)[0];
+                popup_6ea9e8e08671d8fe110a82ae670d9e1f.setContent(html_97d275c98f275501a232ad4dbc5036f2);
+            
+        
+
+        marker_4807aca9a2a5a6bd99603f05d296a703.bindPopup(popup_6ea9e8e08671d8fe110a82ae670d9e1f)
+        ;
+
+        
+    
+    
+            var marker_45b11a4c47cebc88025a8ec6fcf6f956 = L.marker(
+                [39.9894381, -105.1083242],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_5bff56a787466853f40f397511ce4f1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f01fbd6227729c8c7db2d903d641fcf7 = $(`<div id="html_f01fbd6227729c8c7db2d903d641fcf7" style="width: 100.0%; height: 100.0%;">Forum St.</div>`)[0];
+                popup_5bff56a787466853f40f397511ce4f1c.setContent(html_f01fbd6227729c8c7db2d903d641fcf7);
+            
+        
+
+        marker_45b11a4c47cebc88025a8ec6fcf6f956.bindPopup(popup_5bff56a787466853f40f397511ce4f1c)
+        ;
+
+        
+    
+    
+            var marker_ba5a3ee72d385224dca5968bf6c2eb43 = L.marker(
+                [55.675658, 12.5626262],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_df48707ce2e8be2a3a056f5b720cf63c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ef2fde4671deccf832dbc369bf06590 = $(`<div id="html_3ef2fde4671deccf832dbc369bf06590" style="width: 100.0%; height: 100.0%;">Vesterport St.</div>`)[0];
+                popup_df48707ce2e8be2a3a056f5b720cf63c.setContent(html_3ef2fde4671deccf832dbc369bf06590);
+            
+        
+
+        marker_ba5a3ee72d385224dca5968bf6c2eb43.bindPopup(popup_df48707ce2e8be2a3a056f5b720cf63c)
+        ;
+
+        
+    
+    
+            var marker_1312fc7c57b522e99767199c40d50a54 = L.marker(
+                [55.6611195, 12.6186361],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_abfc3e09fca47c468f19a984384ab107 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a842c0572f3477cd7e1b93d905107b6 = $(`<div id="html_8a842c0572f3477cd7e1b93d905107b6" style="width: 100.0%; height: 100.0%;">Lergravsparken St.</div>`)[0];
+                popup_abfc3e09fca47c468f19a984384ab107.setContent(html_8a842c0572f3477cd7e1b93d905107b6);
+            
+        
+
+        marker_1312fc7c57b522e99767199c40d50a54.bindPopup(popup_abfc3e09fca47c468f19a984384ab107)
+        ;
+
+        
+    
+    
+            var marker_bd02b5d74f17799a9777e7d1dcb9427b = L.marker(
+                [55.6721206, 12.5451625],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_810902cd4e9b25f294593ca115b56a34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_044d8788dacc25a13070817c4957adbd = $(`<div id="html_044d8788dacc25a13070817c4957adbd" style="width: 100.0%; height: 100.0%;">Kingosgade</div>`)[0];
+                popup_810902cd4e9b25f294593ca115b56a34.setContent(html_044d8788dacc25a13070817c4957adbd);
+            
+        
+
+        marker_bd02b5d74f17799a9777e7d1dcb9427b.bindPopup(popup_810902cd4e9b25f294593ca115b56a34)
+        ;
+
+        
+    
+    
+            var marker_dc575855b493fcda237dc4c4548a8057 = L.marker(
+                [55.6724114, 12.5543847],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_d1f7f3e8757b9b31cfa742882db5cba0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f327f94986e0a7d6698f85025905348a = $(`<div id="html_f327f94986e0a7d6698f85025905348a" style="width: 100.0%; height: 100.0%;">Vesterbros Torv</div>`)[0];
+                popup_d1f7f3e8757b9b31cfa742882db5cba0.setContent(html_f327f94986e0a7d6698f85025905348a);
+            
+        
+
+        marker_dc575855b493fcda237dc4c4548a8057.bindPopup(popup_d1f7f3e8757b9b31cfa742882db5cba0)
+        ;
+
+        
+    
+    
+            var marker_10d38c0a0ef4f23db22dd851b3679cd3 = L.marker(
+                [55.65619, 12.5906454],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_de54810a8d2a32568b272cd46cae2d7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b11471b9c66abd58747f4aee3a70aaea = $(`<div id="html_b11471b9c66abd58747f4aee3a70aaea" style="width: 100.0%; height: 100.0%;">Amagerfælledvej</div>`)[0];
+                popup_de54810a8d2a32568b272cd46cae2d7b.setContent(html_b11471b9c66abd58747f4aee3a70aaea);
+            
+        
+
+        marker_10d38c0a0ef4f23db22dd851b3679cd3.bindPopup(popup_de54810a8d2a32568b272cd46cae2d7b)
+        ;
+
+        
+    
+    
+            var marker_30186564fd9544499014f71012176950 = L.marker(
+                [55.62916998537024, 12.579378056415742],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_589756719432a5f71a909db5561af455 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f9f3bd7d3f4b83e8c393132d1fed4d3 = $(`<div id="html_0f9f3bd7d3f4b83e8c393132d1fed4d3" style="width: 100.0%; height: 100.0%;">Ørestad/Sundby</div>`)[0];
+                popup_589756719432a5f71a909db5561af455.setContent(html_0f9f3bd7d3f4b83e8c393132d1fed4d3);
+            
+        
+
+        marker_30186564fd9544499014f71012176950.bindPopup(popup_589756719432a5f71a909db5561af455)
+        ;
+
+        
+    
+    
+            var marker_f52d5429cc0e8e3a2d13339fda5abd5e = L.marker(
+                [55.5952695, 12.6693565],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_39d982e257e3cdc1ebace8d737ad7419 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_940375738db07d69a90438598615c13f = $(`<div id="html_940375738db07d69a90438598615c13f" style="width: 100.0%; height: 100.0%;">Dragør Stationsplads</div>`)[0];
+                popup_39d982e257e3cdc1ebace8d737ad7419.setContent(html_940375738db07d69a90438598615c13f);
+            
+        
+
+        marker_f52d5429cc0e8e3a2d13339fda5abd5e.bindPopup(popup_39d982e257e3cdc1ebace8d737ad7419)
+        ;
+
+        
+    
+    
+            var marker_3cf0576eacf3a8eb3e4d5df2bcfe0c8e = L.marker(
+                [55.0807718, 10.6381321],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_76b3f98ddd411a8e3543ff9d3940777e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df8dcf9ed7a93dc460bd94e08b4b293b = $(`<div id="html_df8dcf9ed7a93dc460bd94e08b4b293b" style="width: 100.0%; height: 100.0%;">Englandsvej</div>`)[0];
+                popup_76b3f98ddd411a8e3543ff9d3940777e.setContent(html_df8dcf9ed7a93dc460bd94e08b4b293b);
+            
+        
+
+        marker_3cf0576eacf3a8eb3e4d5df2bcfe0c8e.bindPopup(popup_76b3f98ddd411a8e3543ff9d3940777e)
+        ;
+
+        
+    
+    
+            var marker_b406ffc79b73dd0f3a4e039aa4105e53 = L.marker(
+                [55.6589292, 12.6068512],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_ed1a96f70e1e5d650e2c208a45f8f649 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7654c5da943607174725b8a0e38f6bca = $(`<div id="html_7654c5da943607174725b8a0e38f6bca" style="width: 100.0%; height: 100.0%;">Amagerbrogade</div>`)[0];
+                popup_ed1a96f70e1e5d650e2c208a45f8f649.setContent(html_7654c5da943607174725b8a0e38f6bca);
+            
+        
+
+        marker_b406ffc79b73dd0f3a4e039aa4105e53.bindPopup(popup_ed1a96f70e1e5d650e2c208a45f8f649)
+        ;
+
+        
+    
+    
+            var marker_1e9ef5c5eed43639b66e78c19cb42c36 = L.marker(
+                [55.6808418, 12.6024944],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_89a61b426d57be037f7b284c508360dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05b1afb6b70809780cc5233d048723f5 = $(`<div id="html_05b1afb6b70809780cc5233d048723f5" style="width: 100.0%; height: 100.0%;">Galionsvej</div>`)[0];
+                popup_89a61b426d57be037f7b284c508360dd.setContent(html_05b1afb6b70809780cc5233d048723f5);
+            
+        
+
+        marker_1e9ef5c5eed43639b66e78c19cb42c36.bindPopup(popup_89a61b426d57be037f7b284c508360dd)
+        ;
+
+        
+    
+    
+            var marker_15d928323dd4dd6faa654cb35b9fe7fe = L.marker(
+                [55.6915755, 12.6120791],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_ab0f29109b643bd3306578de519a804e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_672fceed034cc111a0f48713cb7aac29 = $(`<div id="html_672fceed034cc111a0f48713cb7aac29" style="width: 100.0%; height: 100.0%;">Refshalevej</div>`)[0];
+                popup_ab0f29109b643bd3306578de519a804e.setContent(html_672fceed034cc111a0f48713cb7aac29);
+            
+        
+
+        marker_15d928323dd4dd6faa654cb35b9fe7fe.bindPopup(popup_ab0f29109b643bd3306578de519a804e)
+        ;
+
+        
+    
+    
+            var marker_9454e7c3451c949852b24bfa31bc0924 = L.marker(
+                [55.67709175, 12.603975163695747],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_d0e7df544d8c784796fc665f233fe546 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d26e0a1b1fd6a8eca33987f628799b33 = $(`<div id="html_d26e0a1b1fd6a8eca33987f628799b33" style="width: 100.0%; height: 100.0%;">Arsenaløen</div>`)[0];
+                popup_d0e7df544d8c784796fc665f233fe546.setContent(html_d26e0a1b1fd6a8eca33987f628799b33);
+            
+        
+
+        marker_9454e7c3451c949852b24bfa31bc0924.bindPopup(popup_d0e7df544d8c784796fc665f233fe546)
+        ;
+
+        
+    
+    
+            var marker_570e812f3ef35456a1fba0688d7753bd = L.marker(
+                [55.6517471, 12.5274344],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_682f5b3388977be9987ee208f3ef3719 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc5e341330223d38573650fa4c13a635 = $(`<div id="html_cc5e341330223d38573650fa4c13a635" style="width: 100.0%; height: 100.0%;">Sjælør St.</div>`)[0];
+                popup_682f5b3388977be9987ee208f3ef3719.setContent(html_cc5e341330223d38573650fa4c13a635);
+            
+        
+
+        marker_570e812f3ef35456a1fba0688d7753bd.bindPopup(popup_682f5b3388977be9987ee208f3ef3719)
+        ;
+
+        
+    
+    
+            var marker_3c0f2aa7a236d2bae703ff3ec1ff583a = L.marker(
+                [56.5521791, 9.0186976],
+                {}
+            ).addTo(map_fbe69b5eedf36218f12ab90bfc2dd70d);
+        
+    
+        var popup_22c60f07eeb9f336ded19f9859b13d64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b2da37e93f23fd962d7185f62e041a7 = $(`<div id="html_3b2da37e93f23fd962d7185f62e041a7" style="width: 100.0%; height: 100.0%;">H.C. Ørsteds Vej</div>`)[0];
+                popup_22c60f07eeb9f336ded19f9859b13d64.setContent(html_3b2da37e93f23fd962d7185f62e041a7);
+            
+        
+
+        marker_3c0f2aa7a236d2bae703ff3ec1ff583a.bindPopup(popup_22c60f07eeb9f336ded19f9859b13d64)
+        ;
+
+        
+    
+</script>
+</html>

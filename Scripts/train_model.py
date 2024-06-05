@@ -39,12 +39,12 @@ def run(min_count, epoch_count):
     # model = Word2Vec.load("test_training.model")
     # model.train(corpus_iterable=sequences, epochs=epoch_count,callbacks=[epoch_logger], compute_loss= True, total_examples=model.corpus_count)
     model = Word2Vec(sentences=sequences,     # This is the data that we wish to create notes on. This will take all unique words (stations) and put them in the NN
-                    vector_size=100,          # Amount of dimension
+                    vector_size=20,          # Amount of dimension
                     min_count=min_count,      # If the number of occurences of this station is less than 10, then we are not interested in having it in our embedding. -- THIS NEED TO BE LOOKED AT
                     workers=4,                # Amount of cores used for training and so forth.
                     compute_loss=True,        # Used for logging
                     callbacks=[epoch_logger], # Used for logging
-                    alpha=0.01,               # Learning rate. Default is 0.025, but due to the relatively low epochs, a higher lr were decided to give a quicker lowest loss-model
+                    alpha=0.025,               # Learning rate. Default is 0.025, but due to the relatively low epochs, a higher lr were decided to give a quicker lowest loss-model
                     window=5,                 # Due to our sequences only being of length two, when using skip-gram, out window only consists of either the next or the prev entry (as there isn't any other elements in the sequence)
                     sg=1,                     # Skip-gram. WHY DO WE CHOOSE THIS OVER CBoW? 
                     # batch_words=10000,         # Batching training together for more effeciency
@@ -68,7 +68,7 @@ def main():
 
     model = run(min_count, epoch_count)
     # best_model[0].save("model_2e_100d.model")
-    model.save("model_5e_100d_5w.model")
+    model.save("model_5e_100d_25lr.model")
     with open('loss_tracker_100d_10000e.txt', 'w') as f:
         for item in loss_tracker:
             f.write(str(item) + '\n')
